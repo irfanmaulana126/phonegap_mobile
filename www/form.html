@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../www/css/bootstrap2.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">SIMRS</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Profile</a></li>
+          <li class="active"><a href="data_pasien.html">Data Pasien</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+<div class="container">
+  <div class="row">
+  <div class="col-xs-12">
+    <h3>Nav Tab bottom </h3>
+    <!-- tabs -->
+    <div class="tabbable tabs-bottom">
+              <div class="tab-content">
+          <div class="tab-pane active" id="profile">          
+            <div class="row">
+                <div class="col-xs-6"></div>
+                <div class="col-xs-6 text-right"><a href="#Tindakan" class="btn btn-default" data-toggle="tab">next</a></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-xs-12">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">Data Pasien</div>
+                  <div class="panel-body">
+                    Nama:<br>
+                    Tanggal lhr,Usia: <br>
+                    Perawatan: <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div> 
+          <div class="tab-pane" id="Tindakan">          
+            <div class="row">
+                <div class="col-xs-6"><a href="#profile" class="btn btn-default" data-toggle="tab">back</a></div>
+                <div class="col-xs-6 text-right"><a href="#Pemeriksaan" class="btn btn-default" data-toggle="tab">next</a></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-xs-12">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">Tindakan</div>
+                  <div class="panel-body">
+                    <form action="" method="post">
+                      <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Tanggal - Waktu</label>
+
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="Tanggal - Waktu">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Tindakan</label>
+    
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="inputEmail3" placeholder="Tindakan">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="inputEmail3" class="col-sm-2 control-label">Jumlah</label>
+      
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Jumlah">
+                              </div>
+                            </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div> 
+          <div class="tab-pane" id="Pemeriksaan">          
+            <div class="row">
+                <div class="col-xs-6"><a href="#Tindakan" class="btn btn-default" data-toggle="tab">back</a></div>
+                <div class="col-xs-6 text-right"><a href="#Rujukan" class="btn btn-default" data-toggle="tab">next</a></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-xs-12">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">Pemeriksaan</div>
+                  <div class="panel-body">
+                   <form action="" method="post">
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Tanggal - Waktu</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Tanggal - Waktu">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Rawat Amnanesa</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Rawat Amnanesa">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Observasi</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Observasi">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Konsultasi</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Konsultasi">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Pemeriksaan</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Pemeriksaan">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Diagnosa</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Diagnosa">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Resume Medis</label>
+
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Resume Medis">
+                        </div>
+                      </div>
+                   </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div> 
+        <div class="tab-pane" id="Rujukan"> 
+            <div class="row">
+                <div class="col-xs-6"><a href="#Pemeriksaan" class="btn btn-default" data-toggle="tab">back</a></div>
+                <div class="col-xs-6 text-right"><a href="#Rencana" class="btn btn-default" data-toggle="tab">next</a></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-xs-12">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">Rujukan</div>
+                  <div class="panel-body">
+                      <form action="" method="post">
+                          <div class="form-group">
+                              <label for="inputEmail3" class="col-sm-2 control-label">Tanggal - Waktu</label>
+    
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Tanggal - Waktu">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Klinik tujuan</label>
+        
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="inputEmail3" placeholder="Klinik tujuan">
+                                </div>
+                              </div>
+                        </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      
+        <div class="tab-pane" id="Rencana"> 
+            <div class="row">
+                <div class="col-xs-6"><a href="#Rujukan" class="btn btn-default" data-toggle="tab">back</a></div>
+                <div class="col-xs-6 text-right"><a href="#Hasil" class="btn btn-default" data-toggle="tab">next</a></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-xs-12">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">Rencana Opersain</div>
+                  <div class="panel-body">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Tanggal - Waktu order</label>
+
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="inputEmail3" placeholder="Tanggal - Waktu order">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="inputEmail3" class="col-sm-2 control-label">Rencana Operasi</label>
+      
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Rencana Operasi">
+                              </div>
+                            </div>
+                          <div class="form-group">
+                              <label for="inputEmail3" class="col-sm-2 control-label">Rencana Selesai</label>
+      
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Rencana Selesai">
+                              </div>
+                            </div>
+                      </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      
+        <div class="tab-pane" id="Hasil"> 
+            <div class="row">
+                <div class="col-xs-6"><a href="#Rencana" class="btn btn-default" data-toggle="tab">back</a></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-xs-12">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">Hasil Lab</div>
+                  <div class="panel-body">
+                      <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th style="width: 10px">#</th>
+                              <th>Nama Pemeriksaan</th>
+                              <th>Nilai Rujukan / Normal</th>
+                              <th>Unit / Satuan</th>
+                            </tr>
+                          </thead>  
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Rudy Habibi Yusuf</td>
+                              <td>123</td>
+                              <td>124</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+              <!-- tab content -->
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#profile" data-toggle="tab">Data Pasien</a></li>
+        <li><a href="#Pemeriksaan" data-toggle="tab">Pemeriksaan</a></li>
+        <li><a href="#Tindakan" data-toggle="tab">Tindakan</a></li>
+        <li><a href="#Rujukan" data-toggle="tab">Rujukan</a></li>
+        <li><a href="#Rencana" data-toggle="tab">Rencana Opersai</a></li>
+        <li><a href="#Hasil" data-toggle="tab">Hasil Lab</a></li>
+      </ul>
+      
+    </div>
+    <!-- /tabs -->
+</body>
+</html>
